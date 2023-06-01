@@ -1,6 +1,6 @@
-###################################################################################################################################
-                                                    INSTALAÇÃO DA BIBLIOTECA 
-####################################################################################################################
+###################################################################################################################
+                                              INSTALAÇÃO DA BIBLIOTECA 
+###################################################################################################################
 
 - NO TERMINAL DE COMANDO DE EXECUÇÃO PARA O SCRIPT 
     $ chmod +x install_v4.sh
@@ -8,15 +8,15 @@
 - NA PASTA ONDE OS ARQUIVOS .c E .h ESTÃO INSTALADOS DIGITE O COMANDO 
     $ ./install_v4
 
-###################################################################################################################################
-                                                        UTILIZAÇÃO DA LIB
-###################################################################################################################################
+###################################################################################################################
+                                                UTILIZAÇÃO DA LIB
+###################################################################################################################
 
 - INSIRA O SEGUINTE INCLUDE NO ARQUIVO DA FT OU ARQUIVO c
     #include <dlfcn.h>      //lib c padrão para habilitar uso dinamico de libs
 
-- NA FUNÇÃO QUE DESEJA O DEBUG LOGO APÓS AS DEFINIÇÕES DE VARIAVEIS INSIRA O SEGUINTE TRECHO DE CÓDIGO, ONDE ESTA <USUARIO> SE 
-QUISER COLOQUE SEU NOME. ABAIXO É DESCRITO TODAS AS OPÇÕES POSSIVEIS DE USO DA BIBLIOTECA 
+- NA FUNÇÃO QUE DESEJA O DEBUG LOGO APÓS AS DEFINIÇÕES DE VARIAVEIS INSIRA O SEGUINTE TRECHO DE CÓDIGO, ONDE ESTA 
+<USUARIO> SE QUISER COLOQUE SEU NOME. ABAIXO É DESCRITO TODAS AS OPÇÕES POSSIVEIS DE USO DA BIBLIOTECA 
 
 //------------------------------------------------
 //debug <usuario>
@@ -37,9 +37,9 @@ if(!libraryHandle); //sem checagem de verificação
 if(!printDebug);  //sem checagem de verificação
 //------------------------------------------------
 
-- NO TRECHO EM QUE DESEJA DEBUG UTILIZE O SEGUINTE CÓDIGO, O SEGUNDO PARAMETRO É O PADRÃO DE STRING QUE SE DESEJA SER IMPRESSO, 
-O TERCEIRO PARAMETRO EM DIANTE SÃO TODAS AS VARIAVEIS QUE SERÃO UTILIZADAS NO DEBUG NA ORDEM EM QUE FOI ESTRUTURADO NO SEGUNDO 
-PARAMETRO  
+- NO TRECHO EM QUE DESEJA DEBUG UTILIZE O SEGUINTE CÓDIGO, O SEGUNDO PARAMETRO É O PADRÃO DE STRING QUE SE DESEJA 
+SER IMPRESSO, O TERCEIRO PARAMETRO EM DIANTE SÃO TODAS AS VARIAVEIS QUE SERÃO UTILIZADAS NO DEBUG NA ORDEM EM QUE 
+FOI ESTRUTURADO NO SEGUNDO PARAMETRO  
 
 //------------------------------------------------
 printDebug("Configure sua string aqui igual a funcao sprintf", <variaveis>);            //iv. e vi.
